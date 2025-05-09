@@ -41,7 +41,7 @@ internal class ApplicationTest {
 
     @Test
     fun `대출 기능 오류 테스트`() {
-        val input = "대출 987-89A00456\nN\n"
+        val input = "대출 987-89A02035\nN\n"
         System.setIn(ByteArrayInputStream(input.toByteArray(StandardCharsets.UTF_8)))
 
         main()
@@ -65,7 +65,7 @@ internal class ApplicationTest {
 
     @Test
     fun `반납 기능 정상 테스트`() {
-        val input = "반납 987-89A02035\nN\n"
+        val input = "반납 987-89A01066\nN\n"
         System.setIn(ByteArrayInputStream(input.toByteArray(StandardCharsets.UTF_8)))
 
         main()
